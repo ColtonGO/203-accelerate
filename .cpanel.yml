@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/coltvilz/public_html/clients/accelerate
-    - /bin/cp -R accelerate $DEPLOYPATH
+    - /bin/cp * $DEPLOYPATH
