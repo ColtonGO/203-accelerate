@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/coltvilz/public_html/clients/accelerate
-    - /bin/cp * $DEPLOYPATH
