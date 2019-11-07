@@ -16,3 +16,34 @@ function accelerate_child_scripts(){
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'accelerate-style' ));
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
+
+// Custom Post Type Function
+function create_custom_post_types() {
+    register_post_type( 'case_studies',
+        array(
+            'labels' => array(
+                'name' => __( 'Case Studies' ),
+                'singular_name' => __( 'Case Study' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'case-studies' ),
+        )
+    );
+}
+add_action( 'init', 'create_custom_post_types' );
+
+// Defines custom markup for post comments
+function skillcrushstarter_comments($comment, $args, $depth) {
+	$comment  = '<li class="comment">';
+	$comment .=	'<header class="comment-head">';
+	$comment .= '<span class="comment-author">' . get_comment_author() . '</span>';
+	$comment .= '<span class="comment-meta">' . get_comment_date('m/d/Y') . '&emsp;|&emsp;' . get_comment_reply_link(array('depth' => $depth, 'max_depth' => 5)) . '</span>';
+	$comment .= '</header>';
+	$comment .= '<div class="comment-body">';
+	$comment .= '<p>' . get_comment_text() . '</p>';
+	$comment .= '</div>';
+	$comment .= '</li>';
+
+	echo $comment;
+}
