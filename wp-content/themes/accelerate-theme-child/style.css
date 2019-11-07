@@ -51,12 +51,12 @@ Text Domain:  accelerate-theme-child
 /* Case studies */
 aside.case-study-sidebar {
 	float: left;
-	width: 30%;
+	width: 300px;
 }
 
 div.case-study-images {
 	float: left;
-	width: 70%;
+	width: 600px;
 	}
 
 /* SINGLE POST STYLES */
