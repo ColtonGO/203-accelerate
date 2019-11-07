@@ -48,15 +48,39 @@ Text Domain:  accelerate-theme-child
 	text-transform: uppercase;
 }
 
+.featured-work {
+	text-align: center;
+}
+
+.featured-work h4 {
+	margin-top: 10px;
+	margin-bottom: 60px;
+}
+
+.uppercase-title {
+	text-transform: uppercase;
+}
+
+.homepage-featured-work {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+.individual-featured-work {
+	width: 100%;
+}
+
 /* Case studies */
 .case-study-sidebar {
 	float: left;
-	width: 30%;
+	width: 40%;
+	margin-right: 5%;
 }
 
 .case-study-images {
 	float: left;
-	width: 70%;
+	width: 55%;
 	}
 
 /* SINGLE POST STYLES */
@@ -167,3 +191,18 @@ Text Domain:  accelerate-theme-child
 	float: right;
 }
 /* End SINGLE POST STYLES */
+
+@media (min-width: 400px) {
+
+	.homepage-featured-work {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0;
+	}
+	
+	.individual-featured-work {
+		list-style-type: none;
+		width: 30%;
+	}
+}
