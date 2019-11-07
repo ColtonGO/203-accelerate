@@ -15,6 +15,22 @@ Text Domain:  accelerate-theme-child
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+.social-media-navigation ul {
+    list-style: none;
+}
+
+.social-media-menu li {
+    display: inline-block;
+    padding: 0 6px;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 2em;
+}
+
+.social-media-menu li a {
+    color: white;
+}
+
 /* HOMEPAGE STYLES */
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
@@ -72,16 +88,22 @@ Text Domain:  accelerate-theme-child
 }
 
 /* Case studies */
-.case-study-sidebar {
-	float: left;
-	width: 40%;
-	margin-right: 5%;
+
+h6.grey-font {
+	color: #a6a6a6;
 }
 
-.case-study-images {
-	float: left;
-	width: 55%;
-	}
+.case-study {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+div.case-study-images img {
+	width: 100%;
+	height: auto;
+}
 
 /* SINGLE POST STYLES */
 .single .post-entry {
@@ -205,4 +227,27 @@ Text Domain:  accelerate-theme-child
 		list-style-type: none;
 		width: 30%;
 	}
+
+}
+
+@media (min-width: 768px) {
+
+	.case-study {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 40px;
+		width: 100%;
+	}
+
+	.case-study-sidebar {
+		float: left;
+		width: 40%;
+		margin-right: 5%;
+	}
+	
+	.case-study-images {
+		float: left;
+		width: 55%;
+		}
+
 }
