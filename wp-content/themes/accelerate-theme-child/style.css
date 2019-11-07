@@ -49,14 +49,14 @@ Text Domain:  accelerate-theme-child
 }
 
 /* Case studies */
-aside.case-study-sidebar {
+.case-study-sidebar {
 	float: left;
-	width: 300px;
+	width: 30%;
 }
 
-div.case-study-images {
+.case-study-images {
 	float: left;
-	width: 600px;
+	width: 70%;
 	}
 
 /* SINGLE POST STYLES */
