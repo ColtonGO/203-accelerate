@@ -216,6 +216,23 @@ div.case-study-images img {
 }
 /* End SINGLE POST STYLES */
 
+/* Ninja Forms */
+
+.nf-before-form-content,
+.ninja-forms-req-symbol {
+	display: none;
+}
+
+.nf-button-container {
+	float: right;
+}
+
+#nf-field-4.ninja-forms-field.nf-element {
+	background-color: #45ac9d;
+}
+
+/* End ninja forms */
+
 @media (min-width: 400px) {
 
 	.homepage-featured-work {
