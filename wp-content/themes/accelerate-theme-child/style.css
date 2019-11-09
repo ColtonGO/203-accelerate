@@ -89,6 +89,23 @@ Text Domain:  accelerate-theme-child
 	width: 100%;
 }
 
+/* ABOUT PAGE STYLES */
+
+.about-hero {
+	height: 290px;
+	width: 100vw;
+}
+
+.about-hero img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+
+
+/* END ABOUT PAGE STYLES */
+
 /* Case studies */
 
 h6.grey-font {

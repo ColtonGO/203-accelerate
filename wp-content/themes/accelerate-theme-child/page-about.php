@@ -9,6 +9,18 @@
  */
 
 get_header(); ?>
+
+	<section class="about-hero">
+		<?php
+		$size = 'full';
+		$hero_image = get_field('hero_image');
+		$hero_text = get_field('hero_text');
+		?>
+		<?php if($hero_image) {
+			echo wp_get_attachment_image( $hero_image, $size );
+			} ?>
+	</section>
+
 	<div id="primary" class="site-content sidebar">
 		<div class="main-content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
