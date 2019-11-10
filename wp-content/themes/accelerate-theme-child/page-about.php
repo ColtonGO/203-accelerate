@@ -69,6 +69,7 @@ get_header(); ?>
 			</ul>
 
 			<section class="about-cta">
+				<div class="cta-container">
 				<h2 class="call-to-action">
 					<?php if($call_to_action) {
 						echo $call_to_action;
@@ -79,6 +80,7 @@ get_header(); ?>
 						echo $about_button;
 					} ?>
 				</button>
+				</div>
 			</section>	
 
 		</div><!-- .main-content -->
