@@ -94,15 +94,42 @@ Text Domain:  accelerate-theme-child
 .about-hero {
 	height: 290px;
 	width: 100vw;
+	position: relative;
+	color: #ffffff;
 }
 
 .about-hero img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+	text-align: center;
 }
 
+.hero-text {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+	max-width: 558px;
+	text-align: center;
+}
 
+.about-content {
+	text-align: center;
+}
+
+.about-cta {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 650px;
+}
+
+.call-to-action {
+	margin: 0;
+}
 
 /* END ABOUT PAGE STYLES */
 
