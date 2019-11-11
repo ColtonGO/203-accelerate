@@ -115,6 +115,10 @@ Text Domain:  accelerate-theme-child
 	text-align: center;
 }
 
+.about-content h2 {
+	text-transform: uppercase;
+}
+
 .about-content {
 	text-align: center;
 }
@@ -122,8 +126,8 @@ Text Domain:  accelerate-theme-child
 .about-cta {
 	display: flex;
 	justify-content: center;
-	padding-top: 2em;
-	border-top: 1px solid #909090;
+	padding: 4em 0 2em 0;
+	border-top: 1px solid #bfbfbf;
 }
 
 .cta-container {
