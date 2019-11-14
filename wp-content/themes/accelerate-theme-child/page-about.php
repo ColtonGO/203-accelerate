@@ -16,7 +16,6 @@ get_header(); ?>
 		$hero_image = get_field('hero_image');
 		$hero_text = get_field('hero_text');
 		$call_to_action = get_field('call_to_action');
-		$about_button = get_field('about_button');
 		?>
 		<h2 class="hero-text">
 			<?php if($hero_text) {
@@ -75,11 +74,7 @@ get_header(); ?>
 						echo $call_to_action;
 					} ?>
 				</h2>
-				<button class="button">
-					<?php if($about_button) {
-						echo $about_button;
-					} ?>
-				</button>
+				<a class="button" href="<?php echo site_url('/contact-us/') ?>">Contact Us</a>
 				</div>
 			</section>	
 
