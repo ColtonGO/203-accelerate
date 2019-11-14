@@ -144,6 +144,30 @@ Text Domain:  accelerate-theme-child
 
 /* END ABOUT PAGE STYLES */
 
+
+/* 404 PAGE STYLES */
+.not-found {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.whoops-img {
+	width: 20%;
+}
+
+.whoops-content {
+	width: 70%;
+}
+
+.whoops-content h1 {
+	font-family: 'Dancing Script', cursive;
+}
+
+/* END 404 PAGE STYLES */
+
+
 /* Case studies */
 
 h6.grey-font {
