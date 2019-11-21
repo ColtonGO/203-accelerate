@@ -59,11 +59,19 @@ get_header(); ?>
 		</div>
 	</section>
 
-	<section class="twitter-feed">
-		<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-		<div id="secondary" class="widget-area" role="complementary">
-		<?php dynamic_sidebar( 'sidebar-2' ); ?>
+	<section class="recent posts">
+		<div class="site-content">
+			<div class="twitter-post">
+				<h4>Latest Tweet</h4>
+				<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+				<div id="secondary" class="widget-area" role="complementary">
+				<?php dynamic_sidebar( 'sidebar-2' ); ?>
+				</div>
+				<?php endif; ?>
+			</div>
+			<div class="follow-us">
+				<a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flocalhost%2Faccelerate%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=ColtonCodes&tw_p=followbutton">Follow Us </a>>
+			</div>
 		</div>
-		<?php endif; ?>
 	</section>
 <?php get_footer(); ?>
