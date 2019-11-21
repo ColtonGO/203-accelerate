@@ -47,6 +47,7 @@ get_header(); ?>
 
 	<section class="recent-posts">
 		<div class="site-content">
+
 			<div class="blog-post">
 				<h4>From the Blog</h4>
 				<?php query_posts('posts_per_page=1'); ?>
@@ -56,11 +57,7 @@ get_header(); ?>
 					<?php endwhile; ?> 
 				<?php wp_reset_query(); ?>
 			</div>
-		</div>
-	</section>
 
-	<section class="recent posts">
-		<div class="site-content">
 			<div class="twitter-post">
 				<h4>Latest Tweet</h4>
 				<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
@@ -68,10 +65,11 @@ get_header(); ?>
 				<?php dynamic_sidebar( 'sidebar-2' ); ?>
 				</div>
 				<?php endif; ?>
+				<div class="follow-us">
+					<a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flocalhost%2Faccelerate%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=ColtonCodes&tw_p=followbutton">Follow Us </a>>
+				</div>
 			</div>
-			<div class="follow-us">
-				<a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flocalhost%2Faccelerate%2F&ref_src=twsrc%5Etfw&region=follow_link&screen_name=ColtonCodes&tw_p=followbutton">Follow Us </a>>
-			</div>
+			
 		</div>
 	</section>
 <?php get_footer(); ?>

@@ -46,12 +46,14 @@ Text Domain:  accelerate-theme-child
 	width: 50%;
 	float: left;
 	margin-bottom: 2em;
+	padding: 0 1em;
 }
 
 .twitter-post {
 	width: 50%;
 	float: right;
 	margin-bottom: 2em;
+	padding: 0 1em;
 }
 
 .blog-post h4,
@@ -77,7 +79,11 @@ Text Domain:  accelerate-theme-child
 
 .twitter-post ul {
 	list-style: none;
-	margin: 0;
+	margin: 0 0 1em 0;
+}
+
+.twitter-post.widget-area {
+	margin: 1em auto;
 }
 
 .featured-work {
